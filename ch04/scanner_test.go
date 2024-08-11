@@ -40,6 +40,7 @@ func TestScanner(t *testing.T) {
 
 	var words []string
 
+	// EOF가 오기전까지는 비동기적으로 계속 대기함.
 	for scanner.Scan() {
 		words = append(words, scanner.Text())
 	}
