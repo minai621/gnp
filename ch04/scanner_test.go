@@ -1,4 +1,4 @@
-package main
+package ch04
 
 import (
 	"bufio"
